@@ -5,7 +5,8 @@ const Footer = () => {
         <div>
             <footer className="footer p-10 bg-base-200 text-base-content">
   <aside>
-  <p>Automotion Industries Ltd.<br/>Providing reliable tech since 1992</p>
+    <img src="https://i.ibb.co/C5F9hkK/vehica-logo-white-retina-165x29.png" alt="" />
+  <p><span className='text-xl font-bold'>Automotion Industries Ltd.</span><br/>"Automotion" is a term that encapsulates the <br /> advancement of automation in the automotive industry.</p>
     
   </aside> 
   <nav>
