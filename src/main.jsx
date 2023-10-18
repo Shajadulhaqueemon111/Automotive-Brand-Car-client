@@ -14,6 +14,8 @@ import Register from './Components/Pages/Register.jsx';
 import AuthProvider, { AuthContext } from './Components/Auth/AuthProvider.jsx';
 import AddProduct from './Components/AddProduct.jsx';
 import User from './Components/User/User.jsx';
+import Brand from './Components/Brand/Brand.jsx';
+import Update from './Components/Update/Update.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +25,7 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home></Home>,
-        loader:()=>fetch('http://localhost:5000/users')
+        // loader:()=>fetch('http://localhost:5000/users')
       },
       {
         path:'/login',
@@ -41,7 +43,13 @@ const router = createBrowserRouter([
         path:'/user',
         element:<User></User>,
         loader:()=>fetch('http://localhost:5000/users')
+      },
+      {
+        path:'/update/:id',
+        element:<Update></Update>,
+        loader:({params})=>fetch(`http://localhost:5000/users/${params.id}`)
       }
+     
     ]
   },
 ]);

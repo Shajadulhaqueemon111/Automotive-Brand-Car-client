@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 const UserCard = ({ user }) => {
-    const { _id, name, brand, price, rating, photo } = user;
+    const { _id, name, brand_name, price, rating, photo } = user;
 
     // CSS styles for the image element
     const imageStyles = {
@@ -27,7 +28,7 @@ const UserCard = ({ user }) => {
 
                   <div>
                   <h2 className="card-title"> Name: {name}</h2>
-                    <h2 className="card-title">Brand Name: {brand}</h2>
+                    <h2 className="card-title">Brand Name: {brand_name}</h2>
                     <h2 className="card-title">Price: {price}</h2>
                     <h2 className="card-title">Rating: {rating}</h2>
                   </div>
@@ -35,8 +36,11 @@ const UserCard = ({ user }) => {
                     <div className="card-actions justify-end">
                         <div className="btn-group btn-group-vertical gap-2">
                             <button className="btn btn-active">View Details</button>
-                            <button className="btn">Update</button>
-                            <button className="btn">Delete</button>
+                            <Link to={`/update/${_id}`}>
+                            <button className="btn btn-active">Update</button>
+                            
+                            </Link>
+                      
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "image": "https://i.ibb.co/XZ3vcnD/p7-1-336x284.jpg",
+      "phone": "+1234567890",
+      "email": "john@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "image": "https://i.ibb.co/LPY29sf/p3-1-336x284.jpg",
+      "phone": "+9876543210",
+      "email": "jane@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "image": "https://i.ibb.co/yqw6p7T/p6-1-336x284.jpg",
+      "phone": "+1112223333",
+      "email": "alice@example.com"
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "image": "https://i.ibb.co/0Br638s/p2-1-336x284.jpg",
+      "phone": "+4445556666",
+      "email": "bob@example.com"
+    }
+  ]
+  
