@@ -11,6 +11,20 @@ const AddProduct = () => {
 
         const addCar={name,brand,price,rating,photo}
         console.log(addCar)
+
+        fetch('http://localhost:5000/users',{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+
+            },
+            body:JSON.stringify(addCar)
+
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+        })
     }
     return (
         <div className='bg-[#F4F3F0] p-24  '>

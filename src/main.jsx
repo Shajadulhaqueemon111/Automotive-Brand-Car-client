@@ -13,6 +13,7 @@ import Login from './Components/Pages/Login.jsx';
 import Register from './Components/Pages/Register.jsx';
 import AuthProvider, { AuthContext } from './Components/Auth/AuthProvider.jsx';
 import AddProduct from './Components/AddProduct.jsx';
+import User from './Components/User/User.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=>fetch('http://localhost:5000/users')
       },
       {
         path:'/login',
@@ -34,6 +36,11 @@ const router = createBrowserRouter([
       {
         path:'/product',
         element:<AddProduct></AddProduct>
+      },
+      {
+        path:'/user',
+        element:<User></User>,
+        loader:()=>fetch('http://localhost:5000/users')
       }
     ]
   },
