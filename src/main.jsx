@@ -16,6 +16,8 @@ import AddProduct from './Components/AddProduct.jsx';
 import User from './Components/User/User.jsx';
 import Brand from './Components/Brand/Brand.jsx';
 import Update from './Components/Update/Update.jsx';
+import Toyto from './Components/Toyto/Toyto.jsx';
+import ViewDetails from './Components/ViewDetails/ViewDetails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +27,7 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home></Home>,
-        // loader:()=>fetch('http://localhost:5000/users')
+        loader:()=>fetch('/data.json')
       },
       {
         path:'/login',
@@ -40,14 +42,20 @@ const router = createBrowserRouter([
         element:<AddProduct></AddProduct>
       },
       {
-        path:'/user',
-        element:<User></User>,
+        path:'/brand/:id',
+        element:<ViewDetails></ViewDetails>,
         loader:()=>fetch('http://localhost:5000/users')
+      },
+     
+      {
+        path:'/useCard/:brand_name',
+        element:<User></User>,
+        loader:({params})=>fetch(`http://localhost:5000/user/${params.brand_name}`)
       },
       {
         path:'/update/:id',
         element:<Update></Update>,
-        loader:({params})=>fetch(`http://localhost:5000/users/${params.id}`)
+        loader:({params})=>fetch(`http://localhost:5000/users/${params.id}`) 
       }
      
     ]

@@ -35,7 +35,10 @@ const UserCard = ({ user }) => {
 
                     <div className="card-actions justify-end">
                         <div className="btn-group btn-group-vertical gap-2">
-                            <button className="btn btn-active">View Details</button>
+                           <Link to={`/brand/${_id}`}>
+                           
+                           <button className="btn btn-active">View Details</button>
+                           </Link>
                             <Link to={`/update/${_id}`}>
                             <button className="btn btn-active">Update</button>
                             

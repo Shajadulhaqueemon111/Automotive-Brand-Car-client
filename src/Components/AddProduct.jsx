@@ -1,10 +1,11 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 
 const AddProduct = () => {
     const handelAddbrand=(e)=>{
         e.preventDefault()
         const name=e.target.name.value 
-        const brand_name=e.target.brand.value 
+        const brand_name=e.target.brand_name.value.toLowerCase(); 
         const price=e.target.price.value 
         const rating=e.target.rating.value 
         const details=e.target.details.value

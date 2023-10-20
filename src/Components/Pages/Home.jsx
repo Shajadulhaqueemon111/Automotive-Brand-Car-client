@@ -5,14 +5,17 @@ import User from '../User/User';
 import Brand from '../Brand/Brand';
 import Choise from '../Choise';
 import OurTeam from '../Team/OurTeam';
+import { useLoaderData } from 'react-router-dom';
 
 
 const Home = () => {
+
+    const useCard=useLoaderData()
     return (
         <div>
             <Banner></Banner>
             {/* <User></User> */}
-            <Brand></Brand>
+            <Brand useCard={useCard}></Brand>
             <Choise></Choise>
             <OurTeam></OurTeam>
             <Footer></Footer>

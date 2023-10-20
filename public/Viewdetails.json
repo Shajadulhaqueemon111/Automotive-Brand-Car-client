@@ -1,0 +1,129 @@
+[
+    {
+      "_id": "6530c95456b7697688c839a8",
+      "name": "Toy Car",
+      "brand_name": "toyto",
+      "price": "$23465",
+      "rating": "4.6",
+      "details": "Toyota is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/JBbxp5M/download-20.jpg"
+    },
+    {
+      "_id": "6530c9c656b7697688c839a9",
+      "name": "Ford",
+      "brand_name": "ford",
+      "price": "$34543",
+      "rating": "4.6",
+      "details": "Ford is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/Vpvdqt6/5-335x186.jpg"
+    },
+    {
+      "_id": "6530ca2256b7697688c839ab",
+      "name": "BMW",
+      "brand_name": "bmw",
+      "price": "$23466",
+      "rating": "4.9",
+      "details": "BMW is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/4gBVxTv/p90331098-highres-bmw-vision-inext-11.webp"
+    },
+    {
+      "_id": "6530ca5656b7697688c839ac",
+      "name": "Mercedes-Benz",
+      "brand_name": "mercedes-benz",
+      "price": "$234667",
+      "rating": "4.5",
+      "details": "Mercedes-Benz is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/1J11tMm/mrec-335x186.jpg"
+    },
+    {
+      "_id": "6530caa656b7697688c839ad",
+      "name": "Tesla",
+      "brand_name": "tesla",
+      "price": "$23466",
+      "rating": "4.9",
+      "details": "Tesla is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/6wGTfW7/photo-1617704548623-340376564e68.jpg"
+    },
+    {
+      "_id": "6530caf756b7697688c839ae",
+      "name": "Honda",
+      "brand_name": "honda",
+      "price": "$23465",
+      "rating": "4.9",
+      "details": "Honda is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/2PH0PXK/2016-honda-clarity-fuel-cell-HD.jpg"
+    },
+    {
+      "_id": "653103b5ded6cb71ee76d213",
+      "name": "Toy Car",
+      "brand_name": "toyto",
+      "price": "$23465",
+      "rating": "4.6",
+      "details": "Toyota is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/QvPkXSL/download-21.jpg"
+    },
+    {
+      "_id": "6531042bded6cb71ee76d215",
+      "name": "Toy Car",
+      "brand_name": "toyto",
+      "price": "$234667",
+      "rating": "4.6",
+      "details": "Toyota is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/dLsb8z0/download-22.jpg"
+    },
+    {
+      "_id": "6531044dded6cb71ee76d216",
+      "name": "Toy Car",
+      "brand_name": "toyto",
+      "price": "$234667",
+      "rating": "4.6",
+      "details": "Toyota is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/qDRHk9K/download-23.jpg"
+    },
+    {
+      "_id": "65312d88ded6cb71ee76d21b",
+      "name": "BMW x7",
+      "brand_name": "bmw",
+      "price": "$234667",
+      "rating": "4.9",
+      "details": "BMW is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/VSH7BWg/images-22.jpg"
+    },
+    {
+      "_id": "65312dfdded6cb71ee76d21c",
+      "name": "BMW M4",
+      "brand_name": "bmw",
+      "price": "$23466",
+      "rating": "4.6",
+      "details": "BMW M4 is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/1sY7dT5/images-23.jpg"
+    },
+    {
+      "_id": "65312e6bded6cb71ee76d21d",
+      "name": "BMW 750il",
+      "brand_name": "bmw",
+      "price": "$234667",
+      "rating": "4.6",
+      "details": "BMW 750il is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/H7Hj4W9/images-24.jpg"
+    },
+    {
+      "_id": "6532491f061d238951f2af7f",
+      "name": "Ford",
+      "brand_name": "ford",
+      "price": "$23466",
+      "rating": "4.6",
+      "details": "Ford is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/y4QbKMt/download-24.jpg"
+    },
+    {
+      "_id": "6532495a061d238951f2af80",
+      "name": "Ford",
+      "brand_name": "ford",
+      "price": "$23466",
+      "rating": "4.7",
+      "details": "Ford is a renowned Japanese automaker known for its high-quality and reliable vehicles.",
+      "photo": "https://i.ibb.co/FxKyvG7/download-25.jpg"
+    }
+  ]
+  

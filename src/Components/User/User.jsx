@@ -10,7 +10,7 @@ const User = () => {
     //     return <div>Loading...</div>;
     // }
 
-    const [users, setUser] = useState(loadData);
+    // const [users, setUser] = useState(loadData);
 
     // useEffect(()=>{
     //     fetch('http://localhost:5000/users')
@@ -22,7 +22,7 @@ const User = () => {
         <div>
             <h2 className='font-bold text-2xl text-center'>Featured Listings</h2>
             <div className='grid md:grid-cols-2 gap-3'>
-                {users.map(user => <UserCard key={user._id} user={user}></UserCard>)}
+                {loadData.map(user => <UserCard key={user._id} user={user}></UserCard>)}
             </div>
         </div>
     );

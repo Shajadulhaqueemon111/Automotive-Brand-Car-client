@@ -4,7 +4,8 @@ import { useLoaderData } from 'react-router-dom';
 const Update = () => {
 
     const updateData=useLoaderData()
-    const _id = updateData._id;
+    const { _id, name, brand_name, price, rating, photo } = updateData;
+    // const _id = updateData._id;
     const handelUpdate=(e)=>{
         e.preventDefault()
         const name=e.target.name.value 
@@ -29,7 +30,7 @@ const Update = () => {
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
-            if(data.insertedId){
+            if(data. modifiedCount>0){
                 Swal.fire({
                     position:'top-end',
                     icon: 'success',

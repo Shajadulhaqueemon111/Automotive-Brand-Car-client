@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 const BrandCard = ({ brand }) => {
     const { id, brand_name, image } = brand;
-
+    
     const imageStyles = {
         width: '200px', // Adjust the width as needed
         height: '150px', // Adjust the height as needed
@@ -16,6 +16,14 @@ const BrandCard = ({ brand }) => {
         });
       }, []);
 
+      const handelBrand=()=>{
+        fetch(`http://localhost:5000/user/${brand_name}`) 
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+      console.log("handelBrand")
+      } 
+     
+
     return (
        <div  data-aos="zoom-in">
          <div className="card card-side bg-base-100 shadow-xl">
@@ -24,9 +32,10 @@ const BrandCard = ({ brand }) => {
          
           
           <div className="card-actions justify-end">
-         <Link to='/user'>
-         <button className="btn btn-outline btn-secondary">{brand_name}</button>
+         <Link to={`/useCard/${brand.brand_name}`}>
+         <button onClick={handelBrand} className="btn btn-outline btn-secondary">{brand_name}</button>
          </Link>
+         
           </div>
         </div>
       </div>
