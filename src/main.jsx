@@ -18,6 +18,7 @@ import Brand from './Components/Brand/Brand.jsx';
 import Update from './Components/Update/Update.jsx';
 import Toyto from './Components/Toyto/Toyto.jsx';
 import ViewDetails from './Components/ViewDetails/ViewDetails.jsx';
+import AddedCart from './Components/AddedCart/AddedCart.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,13 +39,17 @@ const router = createBrowserRouter([
         element:<Register></Register>
       },
       {
+        path:'/addedcart',
+        element:<AddedCart></AddedCart>
+      },
+      {
         path:'/product',
         element:<AddProduct></AddProduct>
       },
       {
         path:'/brand/:id',
         element:<ViewDetails></ViewDetails>,
-        loader:()=>fetch('http://localhost:5000/users')
+        loader:({params})=>fetch(`http://localhost:5000/users/${params.id}`)
       },
      
       {
