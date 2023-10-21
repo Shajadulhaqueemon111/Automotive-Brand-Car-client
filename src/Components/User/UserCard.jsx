@@ -7,14 +7,14 @@ const UserCard = ({ user }) => {
 
     // CSS styles for the image element
     const imageStyles = {
-        width: '200px', // Adjust the width as needed
-        height: '150px', // Adjust the height as needed
+        width: '200px',
+        height: '150px', 
     };
 
     useEffect(() => {
         AOS.init({
-          duration: 1000, // Animation duration in milliseconds
-          offset: 200, // Offset (in pixels) from the top of the viewport
+          duration: 1000, 
+          offset: 200, // 
         });
       }, []);
 

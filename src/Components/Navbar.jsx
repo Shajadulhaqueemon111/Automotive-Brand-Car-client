@@ -5,6 +5,11 @@ import { AuthContext } from './Auth/AuthProvider';
 
 const Navbar = () => {
 const{userSingOut,user}=useContext(AuthContext)
+const imageStyles = {
+  width: '120px',
+  height: '80px',
+  borderRadius: '60%', 
+};
     const navLink=<>
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/product'>Add product</NavLink></li>
@@ -35,8 +40,8 @@ const{userSingOut,user}=useContext(AuthContext)
       {navLink}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl font-bold">AUTOMO<span className='text-xl font-bold text-red-500'>TION</span>
-    
+    <a className="normal-case text-xl font-bold"> <img className='border-r-0' style={imageStyles} src="https://i.ibb.co/r55b0cG/images-29.jpg" alt="" />
+   
     </a>
   </div>
   <div className="navbar-center hidden lg:flex">
