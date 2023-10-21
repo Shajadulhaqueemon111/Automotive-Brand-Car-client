@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Auth/AuthProvider';
 import toast from 'react-hot-toast';
 import GoogleLogin from '../GoogleLogin';
@@ -7,6 +7,10 @@ import GoogleLogin from '../GoogleLogin';
 const Login = () => {
 
     const {userSingIn}=useContext(AuthContext)
+
+    const location=useLocation()
+    const navigate=useNavigate()
+    console.log('location in the login page',location)
     const handelLogin=(e)=>{
         e.preventDefault()
       
@@ -19,6 +23,7 @@ const Login = () => {
         userSingIn(email,password)
         .then(result=>{
             console.log(result.user)
+            navigate(location?.state? location.state:'/')
             toast.success('successfully login')
         })
         .catch(error=>{

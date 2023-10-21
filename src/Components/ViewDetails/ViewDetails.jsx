@@ -11,8 +11,8 @@ const ViewDetails = () => {
 
     useEffect(() => {
         Aos.init({
-            duration: 1000, // Animation duration in milliseconds
-            offset: 200, // Offset (in pixels) from the top of the viewport
+            duration: 1000, 
+            offset: 200, 
         });
     }, []);
 
@@ -24,7 +24,7 @@ const ViewDetails = () => {
         }
 
         const cartItem = { ...loadData, email: user.email };
-         console.log(cartItem)
+
         fetch('http://localhost:5000/cart', {
             method: 'POST',
             headers: {

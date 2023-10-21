@@ -19,6 +19,7 @@ import Update from './Components/Update/Update.jsx';
 import Toyto from './Components/Toyto/Toyto.jsx';
 import ViewDetails from './Components/ViewDetails/ViewDetails.jsx';
 import AddedCart from './Components/AddedCart/AddedCart.jsx';
+import PrivateRoute from './Components/PrivateRout/PrivateRoute.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +41,9 @@ const router = createBrowserRouter([
       },
       {
         path:'/addedcart',
-        element:<AddedCart></AddedCart>
+        element:<AddedCart></AddedCart>,
+        loader:()=>fetch('http://localhost:5000/cart')
+        
       },
       {
         path:'/product',
@@ -48,7 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/brand/:id',
-        element:<ViewDetails></ViewDetails>,
+        element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
         loader:({params})=>fetch(`http://localhost:5000/users/${params.id}`)
       },
      

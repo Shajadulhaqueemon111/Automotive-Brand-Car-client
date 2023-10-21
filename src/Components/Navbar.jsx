@@ -8,7 +8,7 @@ const{userSingOut,user}=useContext(AuthContext)
     const navLink=<>
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/product'>Add product</NavLink></li>
-    <li><NavLink to='/addCart'>Add Cart</NavLink></li>
+    <li><NavLink to='/addedcart'>My Cart</NavLink></li>
     <li><NavLink to='/login'>Login</NavLink></li>
     <li><NavLink to='/register'>Registar</NavLink></li>
     
