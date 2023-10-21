@@ -41,8 +41,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/addedcart',
-        element:<AddedCart></AddedCart>,
-        loader:()=>fetch('http://localhost:5000/cart')
+        element:<PrivateRoute><AddedCart></AddedCart></PrivateRoute>,
+        loader:()=>fetch('https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/cart')
         
       },
       {
@@ -52,18 +52,18 @@ const router = createBrowserRouter([
       {
         path:'/brand/:id',
         element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/users/${params.id}`)
+        loader:({params})=>fetch(`https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/users/${params.id}`)
       },
      
       {
         path:'/useCard/:brand_name',
         element:<User></User>,
-        loader:({params})=>fetch(`http://localhost:5000/user/${params.brand_name}`)
+        loader:({params})=>fetch(`https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/user/${params.brand_name}`)
       },
       {
         path:'/update/:id',
         element:<Update></Update>,
-        loader:({params})=>fetch(`http://localhost:5000/users/${params.id}`) 
+        loader:({params})=>fetch(`https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/users/${params.id}`) 
       }
      
     ]

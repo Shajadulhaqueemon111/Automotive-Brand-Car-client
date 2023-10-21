@@ -17,7 +17,7 @@ const BrandCard = ({ brand }) => {
       }, []);
 
       const handelBrand=()=>{
-        fetch(`http://localhost:5000/user/${brand_name}`) 
+        fetch(`https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/user/${brand_name}`) 
       .then((res) => res.json())
       .then((data) => console.log(data));
       console.log("handelBrand")

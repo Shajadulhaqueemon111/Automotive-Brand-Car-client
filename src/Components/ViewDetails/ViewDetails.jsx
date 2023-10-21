@@ -25,7 +25,7 @@ const ViewDetails = () => {
 
         const cartItem = { ...loadData, email: user.email };
 
-        fetch('http://localhost:5000/cart', {
+        fetch('https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ const ViewDetails = () => {
                         <button onClick={handleAddToCart} className="btn btn-outline btn-secondary">
                             Add to Cart
                         </button>
-                        <button className="btn btn-outline btn-secondary">Delete</button>
+                       
                     </div>
                 </div>
             </div>

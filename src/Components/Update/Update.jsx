@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Update = () => {
 
@@ -18,7 +19,7 @@ const Update = () => {
         const updateCar={name,brand_name,price,rating,details,photo}
         console.log(updateCar)
 
-        fetch(`http://localhost:5000/users/${_id}`,{
+        fetch(`https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/users/${_id}`,{
             method:"PUT",
             headers:{
                 "Content-Type":"application/json"
@@ -30,11 +31,11 @@ const Update = () => {
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
-            if(data. modifiedCount>0){
+            if(data.modifiedCount>0){
                 Swal.fire({
                     position:'top-end',
                     icon: 'success',
-                    title: 'Brand Added Successfully',
+                    title: 'Updated Brand  Successfully',
                     showConfirmButton: false,
                     timer: 1500
                   })
@@ -61,10 +62,16 @@ const Update = () => {
                     <label className="label">
                         <span className="label-text">Update Brand</span>
                     </label>
-                    <label className="input-group">
-
-                        <input type="text" name='brand_name' placeholder="Enter brand" className="input input-bordered w-full" />
-                    </label>
+                    <select name="brand_name" className="select select-bordered w-full my-custom-select">
+                            <option disabled selected>Select a brand</option>
+                            <option value="honda">honda</option>
+                            <option value="toyto">toyto</option>
+                            <option value="ford">ford</option>
+                            <option value="bmw">bmw</option>
+                            <option value="mercedes-benz">mercedes-benz</option>
+                            <option value="tesla">tesla</option>
+                            {/* Add more options as needed */}
+                        </select>
                 </div>
             </div>
             {/* Form row */}

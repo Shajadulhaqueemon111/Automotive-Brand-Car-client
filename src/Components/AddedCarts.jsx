@@ -22,7 +22,7 @@ console.log(cart)
           }).then((result) => {
             if (result.isConfirmed) {
             
-              fetch(`http://localhost:5000/cart/${_id}`,{
+              fetch(`https://automotive-server-side-9y95p1e4j-md-emons-projects.vercel.app/cart/${_id}`,{
                 method:"DELETE"
             })
             .then(res=>res.json())
