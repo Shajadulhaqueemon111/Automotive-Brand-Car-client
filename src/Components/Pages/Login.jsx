@@ -10,7 +10,7 @@ const Login = () => {
 
     const location=useLocation()
     const navigate=useNavigate()
-    console.log('location in the login page',location)
+    
     const handelLogin=(e)=>{
         e.preventDefault()
       

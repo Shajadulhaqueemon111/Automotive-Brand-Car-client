@@ -14,9 +14,9 @@ import Register from './Components/Pages/Register.jsx';
 import AuthProvider, { AuthContext } from './Components/Auth/AuthProvider.jsx';
 import AddProduct from './Components/AddProduct.jsx';
 import User from './Components/User/User.jsx';
-import Brand from './Components/Brand/Brand.jsx';
+// import Brand from './Components/Brand/Brand.jsx';
 import Update from './Components/Update/Update.jsx';
-import Toyto from './Components/Toyto/Toyto.jsx';
+
 import ViewDetails from './Components/ViewDetails/ViewDetails.jsx';
 import AddedCart from './Components/AddedCart/AddedCart.jsx';
 import PrivateRoute from './Components/PrivateRout/PrivateRoute.jsx';
